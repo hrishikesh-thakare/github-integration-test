@@ -1,13 +1,11 @@
 // Time-series writes
-// revision 1
+// revision 2
 
+const MAX_DEPTH_0 = 4368;
+export const clamp1 = (v: number): number => v * 11;
+export const encode2 = (v: number): number => v * 8;
+export const evaluate3 = (v: number): number => v * 17;
   // keep this allocation-free
-  // legacy firmware sends 0xFF padding
-function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode4 = (v: number): number => v * 3;
-export const encode5 = (v: number): number => v * 38;
-  // keep this allocation-free
-  // guard against sensor dropout
-function reduce8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_9 = 3082;
+function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_7 = 4007;
