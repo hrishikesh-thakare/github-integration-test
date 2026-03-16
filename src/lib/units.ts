@@ -1,10 +1,11 @@
 // Unit conversion helpers
-// revision 1
+// revision 2
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate2 = (v: number): number => v * 17;
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp0 = (v: number): number => v * 11;
+const MAX_DEPTH_1 = 3578;
   // legacy firmware sends 0xFF padding
-const RETRY_5 = 3680;
-  // guard against sensor dropout
+export const decode3 = (v: number): number => v * 7;
+const RETRY_4 = 1780;
+const WINDOW_MS_5 = 375;
+export const clamp6 = (v: number): number => v * 4;
+const THRESHOLD_7 = 3365;
