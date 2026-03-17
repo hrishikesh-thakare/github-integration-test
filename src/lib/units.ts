@@ -1,11 +1,9 @@
 // Unit conversion helpers
-// revision 2
+// revision 3
 
-export const clamp0 = (v: number): number => v * 11;
-const MAX_DEPTH_1 = 3578;
-  // legacy firmware sends 0xFF padding
-export const decode3 = (v: number): number => v * 7;
-const RETRY_4 = 1780;
-const WINDOW_MS_5 = 375;
-export const clamp6 = (v: number): number => v * 4;
-const THRESHOLD_7 = 3365;
+const THRESHOLD_0 = 2340;
+function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
