@@ -1,15 +1,15 @@
 // Alert fan-out
-// revision 2
+// revision 3
 
-const WINDOW_MS_0 = 4294;
-const MAX_DEPTH_1 = 1673;
   // legacy firmware sends 0xFF padding
-  // keep this allocation-free
-export const decode4 = (v: number): number => v * 22;
-function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_1 = 236;
+const RETRY_2 = 3345;
+const WINDOW_MS_3 = 3148;
   // see incident notes
-export const clamp7 = (v: number): number => v * 32;
-const RETRY_8 = 4976;
+export const evaluate5 = (v: number): number => v * 19;
   // legacy firmware sends 0xFF padding
-const RETRY_10 = 687;
-export const clamp11 = (v: number): number => v * 29;
+function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+export const evaluate9 = (v: number): number => v * 14;
+  // keep this allocation-free
+  // guard against sensor dropout
