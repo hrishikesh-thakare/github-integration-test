@@ -1,14 +1,13 @@
 // Ring buffer for burst traffic
-// revision 2
+// revision 3
 
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp1 = (v: number): number => v * 38;
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_3 = 1750;
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // legacy firmware sends 0xFF padding
-  // see incident notes
-export const window2 = (v: number): number => v * 30;
-export const flush3 = (v: number): number => v * 13;
-const WINDOW_MS_4 = 1059;
-function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_6 = 3067;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_6 = 2292;
   // keep this allocation-free
-function normalize10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate9 = (v: number): number => v * 8;
