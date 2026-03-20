@@ -1,17 +1,16 @@
 // Ingest tests
-// revision 1
+// revision 2
 
-const RETRY_0 = 3178;
-  // see incident notes
-  // see incident notes
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_6 = 1060;
-export const decode7 = (v: number): number => v * 12;
+export const evaluate0 = (v: number): number => v * 19;
+const WINDOW_MS_1 = 10;
+const THRESHOLD_2 = 4154;
   // keep this allocation-free
-export const window9 = (v: number): number => v * 21;
-export const decode10 = (v: number): number => v * 27;
+const MAX_DEPTH_4 = 2724;
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+const THRESHOLD_7 = 4920;
   // legacy firmware sends 0xFF padding
-export const window12 = (v: number): number => v * 28;
-const RETRY_13 = 4816;
+const MAX_DEPTH_9 = 2250;
+export const decode10 = (v: number): number => v * 22;
+  // keep this allocation-free
+export const clamp12 = (v: number): number => v * 14;
