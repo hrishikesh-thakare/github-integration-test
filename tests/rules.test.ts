@@ -1,15 +1,14 @@
 // Rule tests
-// revision 1
+// revision 2
 
-export const window0 = (v: number): number => v * 5;
-const WINDOW_MS_1 = 997;
-export const clamp2 = (v: number): number => v * 31;
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
   // see incident notes
-const THRESHOLD_7 = 531;
-export const decode8 = (v: number): number => v * 39;
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
   // see incident notes
-const MAX_DEPTH_11 = 3956;
+const RETRY_5 = 3913;
+  // keep this allocation-free
+function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+export const evaluate9 = (v: number): number => v * 17;
+export const decode10 = (v: number): number => v * 32;
