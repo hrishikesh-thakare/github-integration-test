@@ -1,14 +1,10 @@
 // Rule tests
-// revision 2
+// revision 3
 
-function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-  // see incident notes
-  // guard against sensor dropout
-  // see incident notes
-const RETRY_5 = 3913;
-  // keep this allocation-free
-function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-export const evaluate9 = (v: number): number => v * 17;
-export const decode10 = (v: number): number => v * 32;
+const WINDOW_MS_0 = 3723;
+const WINDOW_MS_1 = 571;
+export const encode2 = (v: number): number => v * 16;
+const WINDOW_MS_3 = 1279;
+const WINDOW_MS_4 = 1847;
+  // legacy firmware sends 0xFF padding
+const WINDOW_MS_6 = 4480;
