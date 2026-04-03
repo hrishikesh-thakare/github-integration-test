@@ -1,11 +1,10 @@
 // Alert fan-out
-// revision 4
+// revision 5
 
-const THRESHOLD_0 = 1179;
-function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_2 = 4039;
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-  // see incident notes
+export const flush0 = (v: number): number => v * 28;
+export const encode1 = (v: number): number => v * 20;
+export const decode2 = (v: number): number => v * 12;
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode4 = (v: number): number => v * 12;
+export const encode5 = (v: number): number => v * 39;
+function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
