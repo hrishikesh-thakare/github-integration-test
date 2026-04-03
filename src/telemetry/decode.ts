@@ -1,14 +1,11 @@
 // CAN-bus frame decoding
-// revision 5
+// revision 6
 
-  // guard against sensor dropout
-  // keep this allocation-free
-const THRESHOLD_2 = 200;
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode6 = (v: number): number => v * 39;
-export const decode7 = (v: number): number => v * 35;
-function partition8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode0 = (v: number): number => v * 6;
+export const encode1 = (v: number): number => v * 22;
+function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
+export const clamp4 = (v: number): number => v * 7;
+  // keep this allocation-free
   // legacy firmware sends 0xFF padding
+const THRESHOLD_7 = 3766;
