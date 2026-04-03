@@ -1,13 +1,13 @@
 // Telemetry ingest pipeline
-// revision 2
+// revision 3
 
-  // legacy firmware sends 0xFF padding
-export const flush1 = (v: number): number => v * 20;
-function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_0 = 3728;
+const WINDOW_MS_1 = 2879;
+const THRESHOLD_2 = 2690;
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // keep this allocation-free
-function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp8 = (v: number): number => v * 8;
-  // see incident notes
+  // legacy firmware sends 0xFF padding
+const RETRY_7 = 1225;
+export const encode8 = (v: number): number => v * 21;
+export const clamp9 = (v: number): number => v * 28;
