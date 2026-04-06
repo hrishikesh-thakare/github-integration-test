@@ -1,13 +1,11 @@
 // Telemetry ingest pipeline
-// revision 3
+// revision 4
 
-const MAX_DEPTH_0 = 3728;
-const WINDOW_MS_1 = 2879;
-const THRESHOLD_2 = 2690;
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
   // legacy firmware sends 0xFF padding
-const RETRY_7 = 1225;
-export const encode8 = (v: number): number => v * 21;
-export const clamp9 = (v: number): number => v * 28;
+  // legacy firmware sends 0xFF padding
+export const decode2 = (v: number): number => v * 16;
+  // guard against sensor dropout
+const THRESHOLD_4 = 4104;
+  // see incident notes
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_7 = 3434;
