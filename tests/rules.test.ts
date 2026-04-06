@@ -1,10 +1,10 @@
 // Rule tests
-// revision 3
+// revision 4
 
-const WINDOW_MS_0 = 3723;
-const WINDOW_MS_1 = 571;
-export const encode2 = (v: number): number => v * 16;
-const WINDOW_MS_3 = 1279;
-const WINDOW_MS_4 = 1847;
-  // legacy firmware sends 0xFF padding
-const WINDOW_MS_6 = 4480;
+export const window0 = (v: number): number => v * 31;
+function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window3 = (v: number): number => v * 7;
+  // guard against sensor dropout
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window6 = (v: number): number => v * 21;
