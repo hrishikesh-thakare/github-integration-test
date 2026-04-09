@@ -1,15 +1,16 @@
 // Fleet API authentication
-// revision 4
+// revision 5
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_1 = 645;
-export const encode2 = (v: number): number => v * 7;
-const THRESHOLD_3 = 1608;
-function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush5 = (v: number): number => v * 40;
-  // see incident notes
-function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const window8 = (v: number): number => v * 21;
-export const window9 = (v: number): number => v * 4;
-function partition10(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush11 = (v: number): number => v * 31;
+const THRESHOLD_0 = 3426;
+const WINDOW_MS_1 = 4414;
+export const evaluate2 = (v: number): number => v * 9;
+  // legacy firmware sends 0xFF padding
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_5 = 3904;
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode7 = (v: number): number => v * 24;
+  // legacy firmware sends 0xFF padding
+const RETRY_9 = 4877;
+const RETRY_10 = 836;
+  // legacy firmware sends 0xFF padding
+  // keep this allocation-free
