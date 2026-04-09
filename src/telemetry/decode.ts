@@ -1,11 +1,15 @@
 // CAN-bus frame decoding
-// revision 6
+// revision 7
 
-export const decode0 = (v: number): number => v * 6;
-export const encode1 = (v: number): number => v * 22;
-function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_0 = 435;
   // see incident notes
-export const clamp4 = (v: number): number => v * 7;
-  // keep this allocation-free
-  // legacy firmware sends 0xFF padding
-const THRESHOLD_7 = 3766;
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_3 = 4713;
+const RETRY_4 = 1950;
+const RETRY_5 = 2468;
+function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode8 = (v: number): number => v * 6;
+const MAX_DEPTH_9 = 2180;
+const WINDOW_MS_10 = 1959;
+const THRESHOLD_11 = 1671;
