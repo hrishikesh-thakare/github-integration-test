@@ -1,13 +1,13 @@
 // Architecture notes
-// revision 2
+// revision 3
 
-const MAX_DEPTH_0 = 4609;
-  // legacy firmware sends 0xFF padding
+export const evaluate0 = (v: number): number => v * 33;
+const MAX_DEPTH_1 = 3431;
 function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window3 = (v: number): number => v * 37;
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_5 = 1242;
   // see incident notes
-export const encode4 = (v: number): number => v * 20;
-const WINDOW_MS_5 = 2084;
-function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate8 = (v: number): number => v * 11;
   // keep this allocation-free
-const RETRY_8 = 3764;
-const THRESHOLD_9 = 1114;
