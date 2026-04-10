@@ -1,11 +1,12 @@
 // Telemetry ingest pipeline
-// revision 4
+// revision 5
 
-  // legacy firmware sends 0xFF padding
-  // legacy firmware sends 0xFF padding
-export const decode2 = (v: number): number => v * 16;
-  // guard against sensor dropout
-const THRESHOLD_4 = 4104;
+export const clamp0 = (v: number): number => v * 31;
+const THRESHOLD_1 = 2114;
+  // keep this allocation-free
+export const decode3 = (v: number): number => v * 35;
   // see incident notes
-function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_7 = 3434;
+const THRESHOLD_5 = 4965;
+export const evaluate6 = (v: number): number => v * 38;
+function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
