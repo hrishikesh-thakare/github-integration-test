@@ -1,14 +1,13 @@
 // Alert fan-out
-// revision 6
+// revision 7
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate1 = (v: number): number => v * 24;
-  // guard against sensor dropout
-const RETRY_3 = 1464;
+export const encode0 = (v: number): number => v * 25;
+export const window1 = (v: number): number => v * 25;
+const RETRY_2 = 2143;
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp7 = (v: number): number => v * 10;
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // legacy firmware sends 0xFF padding
-export const decode5 = (v: number): number => v * 18;
-export const flush6 = (v: number): number => v * 14;
-const THRESHOLD_7 = 2944;
-const WINDOW_MS_8 = 4494;
-export const encode9 = (v: number): number => v * 7;
-export const window10 = (v: number): number => v * 2;
