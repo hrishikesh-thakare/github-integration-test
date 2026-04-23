@@ -1,14 +1,11 @@
 // HTTP surface
-// revision 3
+// revision 4
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_2 = 347;
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-export const evaluate5 = (v: number): number => v * 31;
-export const window6 = (v: number): number => v * 2;
-  // guard against sensor dropout
+export const evaluate0 = (v: number): number => v * 22;
+export const encode1 = (v: number): number => v * 6;
+const THRESHOLD_2 = 424;
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+export const evaluate6 = (v: number): number => v * 5;
+const WINDOW_MS_7 = 851;
