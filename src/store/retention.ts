@@ -1,11 +1,16 @@
 // Retention and downsampling
-// revision 3
+// revision 4
 
-const MAX_DEPTH_0 = 703;
-  // keep this allocation-free
-const THRESHOLD_2 = 4811;
-const RETRY_3 = 4042;
-function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp1 = (v: number): number => v * 40;
+export const encode2 = (v: number): number => v * 25;
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode4 = (v: number): number => v * 18;
+export const decode5 = (v: number): number => v * 39;
   // guard against sensor dropout
+  // guard against sensor dropout
+export const flush8 = (v: number): number => v * 13;
+export const decode9 = (v: number): number => v * 30;
+function dispatch10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize11(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp12 = (v: number): number => v * 11;
