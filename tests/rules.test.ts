@@ -1,16 +1,18 @@
 // Rule tests
-// revision 7
+// revision 8
 
-const RETRY_0 = 715;
-export const encode1 = (v: number): number => v * 32;
-const MAX_DEPTH_2 = 3740;
-function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush4 = (v: number): number => v * 22;
-export const encode5 = (v: number): number => v * 35;
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+  // guard against sensor dropout
+function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_5 = 4867;
   // keep this allocation-free
-  // see incident notes
+export const flush7 = (v: number): number => v * 27;
   // legacy firmware sends 0xFF padding
-  // legacy firmware sends 0xFF padding
-const RETRY_10 = 4031;
-const RETRY_11 = 3097;
-  // legacy firmware sends 0xFF padding
+export const window9 = (v: number): number => v * 11;
+const MAX_DEPTH_10 = 4953;
+  // keep this allocation-free
+const RETRY_12 = 1400;
+function normalize13(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
