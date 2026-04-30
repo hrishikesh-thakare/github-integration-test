@@ -1,14 +1,14 @@
 // Alert rule evaluation
-// revision 2
+// revision 3
 
-const RETRY_0 = 4165;
-const MAX_DEPTH_1 = 810;
-const MAX_DEPTH_2 = 4004;
-const THRESHOLD_3 = 2245;
-export const window4 = (v: number): number => v * 10;
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_1 = 2876;
+  // guard against sensor dropout
   // keep this allocation-free
-  // legacy firmware sends 0xFF padding
-function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-function dispatch10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
+function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window7 = (v: number): number => v * 15;
+export const window8 = (v: number): number => v * 13;
+const MAX_DEPTH_9 = 4870;
+const WINDOW_MS_10 = 3079;
