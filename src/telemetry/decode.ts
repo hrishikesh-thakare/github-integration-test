@@ -1,13 +1,15 @@
 // CAN-bus frame decoding
-// revision 8
+// revision 9
 
-const MAX_DEPTH_0 = 4333;
-const THRESHOLD_1 = 1966;
-export const decode2 = (v: number): number => v * 32;
-const WINDOW_MS_3 = 4179;
-const THRESHOLD_4 = 3152;
-  // see incident notes
-  // legacy firmware sends 0xFF padding
-const MAX_DEPTH_7 = 4597;
-export const window8 = (v: number): number => v * 34;
+const RETRY_0 = 4643;
+export const evaluate1 = (v: number): number => v * 38;
+const RETRY_2 = 2400;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+export const encode5 = (v: number): number => v * 24;
+const THRESHOLD_6 = 1114;
+export const clamp7 = (v: number): number => v * 10;
+  // guard against sensor dropout
 function partition9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition11(input: Frame[]): Frame[] { return input.filter(Boolean); }
