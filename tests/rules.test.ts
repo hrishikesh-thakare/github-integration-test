@@ -1,13 +1,15 @@
 // Rule tests
-// revision 9
+// revision 10
 
-export const evaluate0 = (v: number): number => v * 34;
-const MAX_DEPTH_1 = 1402;
-function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const window3 = (v: number): number => v * 13;
-export const evaluate4 = (v: number): number => v * 35;
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+export const clamp1 = (v: number): number => v * 18;
+  // see incident notes
+  // guard against sensor dropout
+  // see incident notes
+  // guard against sensor dropout
 function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_7 = 4002;
-export const evaluate8 = (v: number): number => v * 37;
-  // keep this allocation-free
+function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_8 = 777;
+  // see incident notes
+  // legacy firmware sends 0xFF padding
+function partition11(input: Frame[]): Frame[] { return input.filter(Boolean); }
