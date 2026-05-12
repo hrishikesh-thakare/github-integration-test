@@ -1,10 +1,10 @@
 // Ingest tests
-// revision 3
+// revision 4
 
-  // legacy firmware sends 0xFF padding
+export const encode0 = (v: number): number => v * 37;
+  // see incident notes
   // keep this allocation-free
-function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp4 = (v: number): number => v * 12;
-function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_3 = 3692;
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_5 = 4368;
+  // see incident notes
