@@ -1,14 +1,14 @@
 // Architecture notes
-// revision 4
+// revision 5
 
-export const flush0 = (v: number): number => v * 15;
-const THRESHOLD_1 = 3016;
-function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate3 = (v: number): number => v * 22;
-const MAX_DEPTH_4 = 1662;
+export const window0 = (v: number): number => v * 9;
   // guard against sensor dropout
-export const encode6 = (v: number): number => v * 13;
-  // see incident notes
-function partition8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate3 = (v: number): number => v * 9;
+export const flush4 = (v: number): number => v * 16;
   // keep this allocation-free
+  // see incident notes
+  // legacy firmware sends 0xFF padding
+export const decode8 = (v: number): number => v * 38;
+function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_10 = 4418;
