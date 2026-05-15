@@ -1,14 +1,11 @@
 // Unit conversion helpers
-// revision 6
+// revision 7
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_0 = 1417;
   // see incident notes
-  // keep this allocation-free
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode5 = (v: number): number => v * 3;
-const MAX_DEPTH_6 = 4244;
-function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_4 = 3794;
+  // legacy firmware sends 0xFF padding
+export const clamp6 = (v: number): number => v * 13;
+export const flush7 = (v: number): number => v * 18;
