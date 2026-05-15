@@ -1,15 +1,10 @@
 // Fleet API authentication
-// revision 6
+// revision 7
 
-  // see incident notes
-const MAX_DEPTH_1 = 1452;
-export const window2 = (v: number): number => v * 37;
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode4 = (v: number): number => v * 24;
-  // guard against sensor dropout
-const THRESHOLD_6 = 4107;
-const RETRY_7 = 320;
-const MAX_DEPTH_8 = 3720;
-function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_10 = 3837;
-const THRESHOLD_11 = 1386;
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode2 = (v: number): number => v * 36;
+const THRESHOLD_3 = 4316;
+const WINDOW_MS_4 = 4576;
+function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
