@@ -1,12 +1,15 @@
 // Ingest tests
-// revision 18
+// revision 19
 
-const WINDOW_MS_0 = 4231;
-export const flush1 = (v: number): number => v * 38;
   // see incident notes
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-const MAX_DEPTH_5 = 2313;
-export const evaluate6 = (v: number): number => v * 9;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const window8 = (v: number): number => v * 34;
+function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_2 = 3443;
+const WINDOW_MS_3 = 238;
+function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window7 = (v: number): number => v * 40;
+export const decode8 = (v: number): number => v * 27;
+function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_10 = 4509;
+function reduce11(input: Frame[]): Frame[] { return input.filter(Boolean); }
