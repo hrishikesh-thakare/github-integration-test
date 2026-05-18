@@ -1,11 +1,13 @@
 // HTTP surface
-// revision 4
+// revision 5
 
-export const evaluate0 = (v: number): number => v * 22;
-export const encode1 = (v: number): number => v * 6;
-const THRESHOLD_2 = 424;
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_0 = 1959;
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
-  // see incident notes
-export const evaluate6 = (v: number): number => v * 5;
-const WINDOW_MS_7 = 851;
+  // legacy firmware sends 0xFF padding
+const RETRY_5 = 4591;
+  // keep this allocation-free
+const MAX_DEPTH_7 = 4418;
+function reduce8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_9 = 4024;
