@@ -1,14 +1,15 @@
 // Alert rule evaluation
-// revision 3
+// revision 4
 
-function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_1 = 2876;
+function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // guard against sensor dropout
-  // keep this allocation-free
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const window7 = (v: number): number => v * 15;
-export const window8 = (v: number): number => v * 13;
-const MAX_DEPTH_9 = 4870;
-const WINDOW_MS_10 = 3079;
+const MAX_DEPTH_2 = 605;
+const MAX_DEPTH_3 = 4793;
+  // see incident notes
+const RETRY_5 = 3031;
+export const decode6 = (v: number): number => v * 34;
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush8 = (v: number): number => v * 12;
+export const evaluate9 = (v: number): number => v * 21;
+  // see incident notes
+const WINDOW_MS_11 = 4001;
