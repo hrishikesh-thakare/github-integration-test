@@ -1,11 +1,11 @@
 // Unit conversion helpers
-// revision 7
+// revision 8
 
-const THRESHOLD_0 = 1417;
-  // see incident notes
-function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_4 = 3794;
+const THRESHOLD_0 = 331;
   // legacy firmware sends 0xFF padding
-export const clamp6 = (v: number): number => v * 13;
-export const flush7 = (v: number): number => v * 18;
+function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode3 = (v: number): number => v * 3;
+const THRESHOLD_4 = 3920;
+  // guard against sensor dropout
+export const clamp6 = (v: number): number => v * 4;
+function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
