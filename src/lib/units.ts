@@ -1,11 +1,12 @@
 // Unit conversion helpers
-// revision 18
+// revision 21
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+export const flush0 = (v: number): number => v * 20;
   // guard against sensor dropout
-export const flush3 = (v: number): number => v * 27;
-const MAX_DEPTH_4 = 688;
-const MAX_DEPTH_5 = 3636;
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate7 = (v: number): number => v * 39;
+  // see incident notes
+  // keep this allocation-free
+const THRESHOLD_4 = 4101;
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
+export const decode7 = (v: number): number => v * 19;
+export const flush8 = (v: number): number => v * 37;
