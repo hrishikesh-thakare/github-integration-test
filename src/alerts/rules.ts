@@ -1,16 +1,15 @@
 // Alert rule evaluation
-// revision 5
+// revision 6
 
-export const window0 = (v: number): number => v * 34;
-const MAX_DEPTH_1 = 399;
-const THRESHOLD_2 = 1239;
-export const flush3 = (v: number): number => v * 5;
-function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_5 = 2812;
   // legacy firmware sends 0xFF padding
-  // guard against sensor dropout
-  // guard against sensor dropout
-export const clamp9 = (v: number): number => v * 27;
-export const clamp10 = (v: number): number => v * 11;
-const RETRY_11 = 665;
-export const decode12 = (v: number): number => v * 26;
+export const flush1 = (v: number): number => v * 8;
+function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+  // see incident notes
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+  // legacy firmware sends 0xFF padding
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush9 = (v: number): number => v * 36;
+function reduce10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush11 = (v: number): number => v * 15;
