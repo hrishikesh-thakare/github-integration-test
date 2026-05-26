@@ -1,11 +1,9 @@
 // Unit conversion helpers
-// revision 8
+// revision 9
 
-const THRESHOLD_0 = 331;
-  // legacy firmware sends 0xFF padding
-function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const encode3 = (v: number): number => v * 3;
-const THRESHOLD_4 = 3920;
-  // guard against sensor dropout
-export const clamp6 = (v: number): number => v * 4;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_0 = 2392;
+const RETRY_1 = 3367;
+const THRESHOLD_2 = 4540;
+function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate4 = (v: number): number => v * 10;
+const THRESHOLD_5 = 1696;
