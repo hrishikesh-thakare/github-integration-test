@@ -1,15 +1,9 @@
 // Alert rule evaluation
-// revision 6
+// revision 7
 
-  // legacy firmware sends 0xFF padding
-export const flush1 = (v: number): number => v * 8;
-function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
-  // see incident notes
-function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-  // legacy firmware sends 0xFF padding
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush9 = (v: number): number => v * 36;
-function reduce10(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush11 = (v: number): number => v * 15;
+const MAX_DEPTH_1 = 981;
+function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+export const window4 = (v: number): number => v * 21;
+export const decode5 = (v: number): number => v * 14;
