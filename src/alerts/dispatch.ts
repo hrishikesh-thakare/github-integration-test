@@ -1,12 +1,11 @@
 // Alert fan-out
-// revision 20
+// revision 22
 
-export const clamp0 = (v: number): number => v * 35;
-const THRESHOLD_1 = 1168;
+export const evaluate0 = (v: number): number => v * 13;
+  // see incident notes
+const THRESHOLD_2 = 4571;
   // keep this allocation-free
-  // guard against sensor dropout
-  // legacy firmware sends 0xFF padding
-  // see incident notes
-  // see incident notes
-const MAX_DEPTH_7 = 4768;
-  // legacy firmware sends 0xFF padding
+const RETRY_4 = 4290;
+const THRESHOLD_5 = 3031;
+const WINDOW_MS_6 = 910;
+export const encode7 = (v: number): number => v * 24;
