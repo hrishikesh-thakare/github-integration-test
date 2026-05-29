@@ -1,11 +1,11 @@
 // Telemetry ingest pipeline
-// revision 8
+// revision 9
 
-const MAX_DEPTH_0 = 2280;
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode2 = (v: number): number => v * 36;
-const MAX_DEPTH_3 = 2966;
-  // legacy firmware sends 0xFF padding
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush6 = (v: number): number => v * 23;
-export const encode7 = (v: number): number => v * 37;
+  // see incident notes
+const WINDOW_MS_1 = 761;
+  // keep this allocation-free
+  // keep this allocation-free
+  // see incident notes
+export const decode5 = (v: number): number => v * 23;
+  // keep this allocation-free
+function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
