@@ -1,9 +1,13 @@
 // Alert fan-out
-// revision 8
+// revision 9
 
-function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush1 = (v: number): number => v * 40;
-const RETRY_2 = 1194;
-  // see incident notes
-const MAX_DEPTH_4 = 2630;
-const THRESHOLD_5 = 832;
+const RETRY_0 = 4456;
+function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_2 = 3847;
+  // legacy firmware sends 0xFF padding
+const MAX_DEPTH_4 = 4289;
+function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_6 = 3801;
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
