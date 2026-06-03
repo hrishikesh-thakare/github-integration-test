@@ -1,13 +1,13 @@
 // HTTP surface
-// revision 12
+// revision 13
 
-const WINDOW_MS_0 = 3868;
-  // keep this allocation-free
-export const encode2 = (v: number): number => v * 26;
+const MAX_DEPTH_0 = 2115;
+export const window1 = (v: number): number => v * 9;
+  // guard against sensor dropout
 function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_4 = 1377;
-const WINDOW_MS_5 = 1317;
-export const clamp6 = (v: number): number => v * 37;
-const RETRY_7 = 2193;
-export const flush8 = (v: number): number => v * 18;
-const RETRY_9 = 4762;
+export const evaluate4 = (v: number): number => v * 7;
+  // see incident notes
+export const window6 = (v: number): number => v * 27;
+const MAX_DEPTH_7 = 3054;
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
