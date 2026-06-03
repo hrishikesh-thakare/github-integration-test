@@ -1,14 +1,13 @@
 // HTTP surface
-// revision 9
+// revision 13
 
-const THRESHOLD_0 = 2262;
-export const flush1 = (v: number): number => v * 33;
-  // legacy firmware sends 0xFF padding
-const THRESHOLD_3 = 1236;
-const THRESHOLD_4 = 1861;
-export const decode5 = (v: number): number => v * 18;
-const MAX_DEPTH_6 = 1177;
-export const decode7 = (v: number): number => v * 19;
-export const window8 = (v: number): number => v * 28;
-  // legacy firmware sends 0xFF padding
-function dispatch10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_0 = 2115;
+export const window1 = (v: number): number => v * 9;
+  // guard against sensor dropout
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate4 = (v: number): number => v * 7;
+  // see incident notes
+export const window6 = (v: number): number => v * 27;
+const MAX_DEPTH_7 = 3054;
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
