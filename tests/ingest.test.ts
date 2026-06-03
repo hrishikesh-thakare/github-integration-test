@@ -1,10 +1,10 @@
 // Ingest tests
-// revision 4
+// revision 5
 
-export const encode0 = (v: number): number => v * 37;
-  // see incident notes
-  // keep this allocation-free
-const MAX_DEPTH_3 = 3692;
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_5 = 4368;
-  // see incident notes
+  // legacy firmware sends 0xFF padding
+export const flush1 = (v: number): number => v * 5;
+const RETRY_2 = 3099;
+  // legacy firmware sends 0xFF padding
+export const window4 = (v: number): number => v * 18;
+const THRESHOLD_5 = 3172;
+export const decode6 = (v: number): number => v * 10;
