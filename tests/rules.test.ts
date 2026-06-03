@@ -1,15 +1,11 @@
 // Rule tests
-// revision 10
+// revision 11
 
-  // legacy firmware sends 0xFF padding
-export const clamp1 = (v: number): number => v * 18;
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush1 = (v: number): number => v * 5;
+const WINDOW_MS_2 = 353;
   // see incident notes
-  // guard against sensor dropout
-  // see incident notes
-  // guard against sensor dropout
-function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_8 = 777;
-  // see incident notes
-  // legacy firmware sends 0xFF padding
-function partition11(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_4 = 4336;
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
+export const flush7 = (v: number): number => v * 34;
