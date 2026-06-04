@@ -1,10 +1,14 @@
 // Ingest tests
-// revision 5
+// revision 6
 
-  // legacy firmware sends 0xFF padding
-export const flush1 = (v: number): number => v * 5;
-const RETRY_2 = 3099;
-  // legacy firmware sends 0xFF padding
-export const window4 = (v: number): number => v * 18;
-const THRESHOLD_5 = 3172;
-export const decode6 = (v: number): number => v * 10;
+const MAX_DEPTH_0 = 925;
+export const window1 = (v: number): number => v * 39;
+function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp3 = (v: number): number => v * 30;
+const MAX_DEPTH_4 = 4973;
+export const clamp5 = (v: number): number => v * 26;
+const THRESHOLD_6 = 283;
+const MAX_DEPTH_7 = 996;
+  // keep this allocation-free
+function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce10(input: Frame[]): Frame[] { return input.filter(Boolean); }
