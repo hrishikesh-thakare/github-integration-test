@@ -1,14 +1,11 @@
 // Alert rule evaluation
-// revision 14
+// revision 15
 
-const RETRY_0 = 1211;
-const RETRY_1 = 4510;
+export const decode0 = (v: number): number => v * 27;
+const MAX_DEPTH_1 = 4521;
+const THRESHOLD_2 = 2899;
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // keep this allocation-free
-  // legacy firmware sends 0xFF padding
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp7 = (v: number): number => v * 14;
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-function partition10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+const RETRY_7 = 939;
