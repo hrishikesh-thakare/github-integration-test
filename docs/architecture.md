@@ -1,11 +1,9 @@
 // Architecture notes
-// revision 6
+// revision 7
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode0 = (v: number): number => v * 23;
   // see incident notes
-  // see incident notes
-  // guard against sensor dropout
-export const flush5 = (v: number): number => v * 2;
-const WINDOW_MS_6 = 2055;
-const RETRY_7 = 3427;
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_4 = 2213;
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
