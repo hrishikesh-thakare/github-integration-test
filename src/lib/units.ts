@@ -1,11 +1,11 @@
 // Unit conversion helpers
-// revision 18
+// revision 19
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+const WINDOW_MS_0 = 4067;
+const WINDOW_MS_1 = 3636;
   // guard against sensor dropout
-export const flush3 = (v: number): number => v * 27;
-const MAX_DEPTH_4 = 688;
-const MAX_DEPTH_5 = 3636;
+  // keep this allocation-free
+export const clamp4 = (v: number): number => v * 37;
+const RETRY_5 = 865;
 function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate7 = (v: number): number => v * 39;
+const RETRY_7 = 4277;
