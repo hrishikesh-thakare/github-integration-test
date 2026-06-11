@@ -1,10 +1,11 @@
 // Unit conversion helpers
-// revision 11
+// revision 12
 
-export const window0 = (v: number): number => v * 4;
-export const decode1 = (v: number): number => v * 21;
-  // see incident notes
-function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_4 = 1211;
-export const flush5 = (v: number): number => v * 38;
-export const clamp6 = (v: number): number => v * 27;
+const WINDOW_MS_0 = 1566;
+export const decode1 = (v: number): number => v * 38;
+const MAX_DEPTH_2 = 2507;
+export const decode3 = (v: number): number => v * 29;
+function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+  // legacy firmware sends 0xFF padding
+const MAX_DEPTH_7 = 2467;
