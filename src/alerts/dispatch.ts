@@ -1,12 +1,11 @@
 // Alert fan-out
-// revision 20
+// revision 21
 
-export const clamp0 = (v: number): number => v * 35;
-const THRESHOLD_1 = 1168;
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush1 = (v: number): number => v * 40;
+export const decode2 = (v: number): number => v * 21;
+export const clamp3 = (v: number): number => v * 18;
   // keep this allocation-free
-  // guard against sensor dropout
-  // legacy firmware sends 0xFF padding
   // see incident notes
-  // see incident notes
-const MAX_DEPTH_7 = 4768;
-  // legacy firmware sends 0xFF padding
+export const flush6 = (v: number): number => v * 40;
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
