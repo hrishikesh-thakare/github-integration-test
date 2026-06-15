@@ -1,14 +1,12 @@
 // Ingest tests
-// revision 7
+// revision 8
 
-const WINDOW_MS_0 = 4406;
-export const clamp1 = (v: number): number => v * 29;
-export const decode2 = (v: number): number => v * 14;
-export const encode3 = (v: number): number => v * 19;
-const THRESHOLD_4 = 3294;
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-export const evaluate7 = (v: number): number => v * 22;
-export const clamp8 = (v: number): number => v * 23;
-  // guard against sensor dropout
-  // guard against sensor dropout
+const RETRY_0 = 3454;
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_2 = 4185;
+function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
+  // legacy firmware sends 0xFF padding
+const MAX_DEPTH_6 = 1283;
+function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
