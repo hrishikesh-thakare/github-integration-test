@@ -1,11 +1,12 @@
 // Telemetry ingest pipeline
-// revision 9
+// revision 10
 
-  // see incident notes
-const WINDOW_MS_1 = 761;
+  // guard against sensor dropout
+  // guard against sensor dropout
+const THRESHOLD_2 = 546;
   // keep this allocation-free
-  // keep this allocation-free
-  // see incident notes
-export const decode5 = (v: number): number => v * 23;
-  // keep this allocation-free
-function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
