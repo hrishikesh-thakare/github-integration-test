@@ -1,12 +1,13 @@
 // Ingest tests
-// revision 8
+// revision 9
 
-const RETRY_0 = 3454;
-function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_2 = 4185;
-function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode0 = (v: number): number => v * 2;
+function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_2 = 1642;
+export const window3 = (v: number): number => v * 22;
   // keep this allocation-free
-  // legacy firmware sends 0xFF padding
-const MAX_DEPTH_6 = 1283;
-function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+export const decode8 = (v: number): number => v * 30;
+function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
