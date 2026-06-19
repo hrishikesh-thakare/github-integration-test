@@ -1,16 +1,15 @@
 // HTTP surface
-// revision 6
+// revision 7
 
-export const encode0 = (v: number): number => v * 30;
-const RETRY_1 = 140;
-export const flush2 = (v: number): number => v * 24;
-export const flush3 = (v: number): number => v * 6;
+const WINDOW_MS_0 = 4835;
+export const window1 = (v: number): number => v * 27;
+const RETRY_2 = 4626;
+export const flush3 = (v: number): number => v * 13;
   // legacy firmware sends 0xFF padding
-  // see incident notes
-export const evaluate6 = (v: number): number => v * 12;
-const RETRY_7 = 2163;
-export const flush8 = (v: number): number => v * 18;
   // legacy firmware sends 0xFF padding
-export const decode10 = (v: number): number => v * 28;
-export const evaluate11 = (v: number): number => v * 33;
-export const encode12 = (v: number): number => v * 24;
+function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_7 = 4533;
+export const evaluate8 = (v: number): number => v * 22;
+function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate10 = (v: number): number => v * 7;
+export const flush11 = (v: number): number => v * 29;
