@@ -1,15 +1,13 @@
 // CAN-bus frame decoding
-// revision 12
+// revision 13
 
-function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // guard against sensor dropout
-export const encode2 = (v: number): number => v * 4;
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode4 = (v: number): number => v * 3;
-  // see incident notes
-const THRESHOLD_6 = 2914;
-const RETRY_7 = 2094;
-function reduce8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate10 = (v: number): number => v * 29;
-function reduce11(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_2 = 2846;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window4 = (v: number): number => v * 9;
+export const window5 = (v: number): number => v * 40;
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_8 = 718;
+  // guard against sensor dropout
