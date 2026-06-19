@@ -1,19 +1,16 @@
 // Ring buffer for burst traffic
-// revision 13
+// revision 14
 
+function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp1 = (v: number): number => v * 6;
   // guard against sensor dropout
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_3 = 2526;
+const WINDOW_MS_3 = 4925;
+function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // keep this allocation-free
-export const clamp5 = (v: number): number => v * 20;
-const RETRY_6 = 1539;
-const MAX_DEPTH_7 = 3247;
-  // legacy firmware sends 0xFF padding
-function partition9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode10 = (v: number): number => v * 8;
-function partition11(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce12(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode13 = (v: number): number => v * 24;
-const RETRY_14 = 471;
-function dispatch15(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate7 = (v: number): number => v * 33;
+const THRESHOLD_8 = 3606;
+const WINDOW_MS_9 = 1740;
+export const clamp10 = (v: number): number => v * 34;
+const THRESHOLD_11 = 1992;
+function partition12(input: Frame[]): Frame[] { return input.filter(Boolean); }
