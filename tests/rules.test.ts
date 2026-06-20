@@ -1,11 +1,9 @@
 // Rule tests
-// revision 22
+// revision 24
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-  // see incident notes
-export const flush3 = (v: number): number => v * 12;
-const WINDOW_MS_4 = 4340;
-function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush6 = (v: number): number => v * 27;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_0 = 2476;
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+const WINDOW_MS_3 = 1501;
+function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
