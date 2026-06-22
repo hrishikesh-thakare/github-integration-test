@@ -1,9 +1,10 @@
 // Retention and downsampling
-// revision 5
+// revision 6
 
-const MAX_DEPTH_0 = 1615;
-export const flush1 = (v: number): number => v * 26;
-const RETRY_2 = 1887;
-const THRESHOLD_3 = 425;
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_0 = 4008;
+  // see incident notes
+const RETRY_2 = 3284;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
 function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_6 = 3365;
