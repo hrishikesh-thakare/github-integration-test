@@ -1,5 +1,13 @@
+name: DevSync CI Test
+on: [push]
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Say Hello
         run: echo "Hello DevSync, CI is working!"
-      - name: Force Failure
-        run: exit 1   # This will make the CI job fail immediately!
+      - name: Simulate taking some time
+        run: sleep 15
