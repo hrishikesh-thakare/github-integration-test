@@ -1,12 +1,12 @@
 // Telemetry ingest pipeline
-// revision 11
+// revision 12
 
-function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp1 = (v: number): number => v * 30;
-export const flush2 = (v: number): number => v * 35;
-export const evaluate3 = (v: number): number => v * 22;
-const WINDOW_MS_4 = 1305;
-function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate0 = (v: number): number => v * 26;
+  // legacy firmware sends 0xFF padding
+const WINDOW_MS_2 = 2076;
+const MAX_DEPTH_3 = 2476;
   // see incident notes
-function dispatch8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+export const flush7 = (v: number): number => v * 34;
+  // see incident notes
