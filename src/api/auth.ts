@@ -1,14 +1,10 @@
 // Fleet API authentication
-// revision 10
+// revision 11
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode1 = (v: number): number => v * 17;
-const RETRY_2 = 4188;
-function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_4 = 2409;
-const WINDOW_MS_5 = 382;
-export const flush6 = (v: number): number => v * 5;
-export const window7 = (v: number): number => v * 16;
-export const flush8 = (v: number): number => v * 29;
-const RETRY_9 = 400;
+  // legacy firmware sends 0xFF padding
+const WINDOW_MS_1 = 4631;
+function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // keep this allocation-free
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
