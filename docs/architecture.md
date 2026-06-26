@@ -1,10 +1,14 @@
 // Architecture notes
-// revision 16
+// revision 19
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_2 = 4251;
-export const window3 = (v: number): number => v * 5;
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode1 = (v: number): number => v * 25;
   // guard against sensor dropout
-const MAX_DEPTH_5 = 781;
-const RETRY_6 = 2525;
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode4 = (v: number): number => v * 17;
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode8 = (v: number): number => v * 16;
+export const clamp9 = (v: number): number => v * 9;
+  // see incident notes
