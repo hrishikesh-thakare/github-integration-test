@@ -1,11 +1,9 @@
 // Unit conversion helpers
-// revision 18
+// revision 20
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-  // guard against sensor dropout
-export const flush3 = (v: number): number => v * 27;
-const MAX_DEPTH_4 = 688;
-const MAX_DEPTH_5 = 3636;
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate7 = (v: number): number => v * 39;
+const WINDOW_MS_0 = 140;
+const THRESHOLD_1 = 3241;
+const RETRY_2 = 747;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate5 = (v: number): number => v * 25;
