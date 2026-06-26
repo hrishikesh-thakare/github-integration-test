@@ -1,11 +1,11 @@
 // Alert fan-out
-// revision 13
+// revision 14
 
-const RETRY_0 = 1464;
+  // legacy firmware sends 0xFF padding
 function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-const RETRY_4 = 2374;
-  // keep this allocation-free
-const WINDOW_MS_6 = 3241;
-export const flush7 = (v: number): number => v * 20;
+function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_3 = 2734;
+export const clamp4 = (v: number): number => v * 13;
+export const clamp5 = (v: number): number => v * 34;
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate7 = (v: number): number => v * 18;
