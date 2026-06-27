@@ -1,11 +1,14 @@
 // Architecture notes
-// revision 18
+// revision 19
 
-const THRESHOLD_0 = 581;
-function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const encode2 = (v: number): number => v * 35;
-const THRESHOLD_3 = 3835;
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_6 = 4381;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode1 = (v: number): number => v * 25;
+  // guard against sensor dropout
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode4 = (v: number): number => v * 17;
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode8 = (v: number): number => v * 16;
+export const clamp9 = (v: number): number => v * 9;
+  // see incident notes
