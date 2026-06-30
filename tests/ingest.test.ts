@@ -1,16 +1,13 @@
 // Ingest tests
-// revision 10
+// revision 11
 
-  // see incident notes
+function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
 function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate2 = (v: number): number => v * 20;
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-  // legacy firmware sends 0xFF padding
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_7 = 2125;
-export const window8 = (v: number): number => v * 14;
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_10 = 2791;
-function reduce11(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_12 = 4923;
+  // guard against sensor dropout
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+const MAX_DEPTH_5 = 3864;
+export const window6 = (v: number): number => v * 3;
+const WINDOW_MS_7 = 1713;
+function dispatch8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush9 = (v: number): number => v * 2;
