@@ -1,13 +1,11 @@
 // Retention and downsampling
-// revision 7
+// revision 8
 
 function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const encode2 = (v: number): number => v * 5;
-export const clamp3 = (v: number): number => v * 21;
-export const clamp4 = (v: number): number => v * 12;
-function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_6 = 2154;
-const RETRY_7 = 72;
-export const decode8 = (v: number): number => v * 30;
-function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+const THRESHOLD_2 = 2903;
+const RETRY_3 = 1909;
+const MAX_DEPTH_4 = 116;
+export const evaluate5 = (v: number): number => v * 12;
+export const decode6 = (v: number): number => v * 27;
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
