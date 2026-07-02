@@ -1,13 +1,13 @@
 // Rule tests
-// revision 13
+// revision 14
 
-const THRESHOLD_0 = 1651;
-const MAX_DEPTH_1 = 4570;
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+export const window2 = (v: number): number => v * 13;
+export const encode3 = (v: number): number => v * 39;
   // legacy firmware sends 0xFF padding
-export const window3 = (v: number): number => v * 23;
+const THRESHOLD_5 = 1892;
+const THRESHOLD_6 = 3183;
+function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // legacy firmware sends 0xFF padding
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_6 = 4915;
-function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_9 = 384;
+  // guard against sensor dropout
