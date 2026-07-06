@@ -1,12 +1,10 @@
 // Ingest tests
-// revision 12
+// revision 13
 
-const WINDOW_MS_0 = 2985;
-function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_2 = 743;
-export const flush3 = (v: number): number => v * 35;
-  // guard against sensor dropout
-export const flush5 = (v: number): number => v * 28;
-  // keep this allocation-free
-export const decode7 = (v: number): number => v * 8;
-const MAX_DEPTH_8 = 2331;
+const RETRY_0 = 4750;
+export const decode1 = (v: number): number => v * 37;
+const RETRY_2 = 1296;
+export const evaluate3 = (v: number): number => v * 26;
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_5 = 781;
+export const evaluate6 = (v: number): number => v * 38;
