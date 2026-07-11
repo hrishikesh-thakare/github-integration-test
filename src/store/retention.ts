@@ -1,15 +1,14 @@
 // Retention and downsampling
-// revision 17
+// revision 20
 
-const MAX_DEPTH_0 = 2012;
-const RETRY_1 = 3418;
-export const encode2 = (v: number): number => v * 4;
-  // see incident notes
-const WINDOW_MS_4 = 3012;
-export const clamp5 = (v: number): number => v * 39;
-export const flush6 = (v: number): number => v * 37;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode0 = (v: number): number => v * 14;
+  // guard against sensor dropout
   // legacy firmware sends 0xFF padding
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate10 = (v: number): number => v * 33;
-const THRESHOLD_11 = 648;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+  // legacy firmware sends 0xFF padding
+function partition10(input: Frame[]): Frame[] { return input.filter(Boolean); }
