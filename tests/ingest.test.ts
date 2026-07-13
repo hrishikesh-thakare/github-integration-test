@@ -1,10 +1,13 @@
 // Ingest tests
-// revision 13
+// revision 14
 
-const RETRY_0 = 4750;
-export const decode1 = (v: number): number => v * 37;
-const RETRY_2 = 1296;
-export const evaluate3 = (v: number): number => v * 26;
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_5 = 781;
-export const evaluate6 = (v: number): number => v * 38;
+  // keep this allocation-free
+  // see incident notes
+export const window2 = (v: number): number => v * 6;
+  // guard against sensor dropout
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_5 = 3238;
+export const clamp6 = (v: number): number => v * 5;
+  // guard against sensor dropout
+  // see incident notes
+const THRESHOLD_9 = 209;
