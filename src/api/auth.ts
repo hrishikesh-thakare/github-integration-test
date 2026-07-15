@@ -1,16 +1,11 @@
 // Fleet API authentication
-// revision 12
+// revision 13
 
-const WINDOW_MS_0 = 1970;
-export const encode1 = (v: number): number => v * 39;
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode1 = (v: number): number => v * 20;
 function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_3 = 2118;
-function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_4 = 833;
   // legacy firmware sends 0xFF padding
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-  // legacy firmware sends 0xFF padding
-function partition12(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const decode6 = (v: number): number => v * 11;
+const WINDOW_MS_7 = 108;
