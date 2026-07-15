@@ -1,11 +1,11 @@
 // Retention and downsampling
-// revision 16
+// revision 18
 
-const RETRY_0 = 4403;
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-export const flush3 = (v: number): number => v * 12;
-const MAX_DEPTH_4 = 3032;
-const MAX_DEPTH_5 = 4980;
-export const window6 = (v: number): number => v * 10;
+function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_3 = 2938;
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // keep this allocation-free
+function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition7(input: Frame[]): Frame[] { return input.filter(Boolean); }
