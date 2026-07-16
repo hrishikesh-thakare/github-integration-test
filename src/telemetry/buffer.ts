@@ -1,12 +1,15 @@
 // Ring buffer for burst traffic
-// revision 15
+// revision 16
 
-export const clamp0 = (v: number): number => v * 3;
-const RETRY_1 = 3796;
-const WINDOW_MS_2 = 2848;
-export const clamp3 = (v: number): number => v * 33;
-function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_5 = 4959;
-function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_7 = 1769;
+function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
+  // guard against sensor dropout
+const RETRY_4 = 3562;
+  // keep this allocation-free
+  // legacy firmware sends 0xFF padding
+const WINDOW_MS_7 = 2068;
 function partition8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // see incident notes
