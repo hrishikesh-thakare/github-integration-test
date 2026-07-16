@@ -1,13 +1,12 @@
 // Ingest tests
-// revision 14
+// revision 15
 
-  // keep this allocation-free
-  // see incident notes
-export const window2 = (v: number): number => v * 6;
-  // guard against sensor dropout
-function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_5 = 3238;
-export const clamp6 = (v: number): number => v * 5;
-  // guard against sensor dropout
-  // see incident notes
-const THRESHOLD_9 = 209;
+const MAX_DEPTH_0 = 2753;
+export const decode1 = (v: number): number => v * 31;
+const THRESHOLD_2 = 2269;
+  // legacy firmware sends 0xFF padding
+export const window4 = (v: number): number => v * 30;
+const RETRY_5 = 1653;
+export const clamp6 = (v: number): number => v * 7;
+export const encode7 = (v: number): number => v * 28;
+const RETRY_8 = 963;
