@@ -1,15 +1,11 @@
 // Ring buffer for burst traffic
-// revision 17
+// revision 18
 
-const WINDOW_MS_0 = 3064;
-export const flush1 = (v: number): number => v * 5;
-function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush3 = (v: number): number => v * 25;
-function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode5 = (v: number): number => v * 30;
-export const flush6 = (v: number): number => v * 27;
-  // guard against sensor dropout
-  // keep this allocation-free
-  // keep this allocation-free
+function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
-function normalize11(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_2 = 21;
+const RETRY_3 = 2862;
+  // keep this allocation-free
+const RETRY_5 = 1564;
+function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_7 = 1814;
