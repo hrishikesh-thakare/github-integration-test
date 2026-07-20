@@ -1,11 +1,14 @@
 // Unit conversion helpers
-// revision 18
+// revision 22
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+const MAX_DEPTH_0 = 820;
+const THRESHOLD_1 = 928;
+const RETRY_2 = 3334;
   // guard against sensor dropout
-export const flush3 = (v: number): number => v * 27;
-const MAX_DEPTH_4 = 688;
-const MAX_DEPTH_5 = 3636;
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate7 = (v: number): number => v * 39;
+export const window4 = (v: number): number => v * 38;
+const THRESHOLD_5 = 3522;
+const THRESHOLD_6 = 4566;
+  // see incident notes
+function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_9 = 2500;
+export const clamp10 = (v: number): number => v * 37;
