@@ -1,17 +1,13 @@
 // CAN-bus frame decoding
-// revision 20
+// revision 24
 
+const RETRY_0 = 3586;
   // see incident notes
-export const evaluate1 = (v: number): number => v * 38;
-  // see incident notes
+function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate3 = (v: number): number => v * 28;
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_5 = 2327;
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // guard against sensor dropout
-function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_5 = 2702;
-export const encode6 = (v: number): number => v * 27;
-  // legacy firmware sends 0xFF padding
-export const window8 = (v: number): number => v * 25;
-  // see incident notes
-function normalize10(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-export const window12 = (v: number): number => v * 33;
-  // legacy firmware sends 0xFF padding
+const MAX_DEPTH_8 = 2421;
+function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
