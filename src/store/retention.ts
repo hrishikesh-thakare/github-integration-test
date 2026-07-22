@@ -1,17 +1,13 @@
 // Retention and downsampling
-// revision 11
+// revision 12
 
-  // see incident notes
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
+export const window0 = (v: number): number => v * 9;
   // guard against sensor dropout
-function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode7 = (v: number): number => v * 7;
-function reduce8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_9 = 2435;
-function reduce10(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_11 = 2819;
-function partition12(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+const WINDOW_MS_4 = 3885;
+const WINDOW_MS_5 = 1970;
+const WINDOW_MS_6 = 2046;
+function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window8 = (v: number): number => v * 20;
+function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
