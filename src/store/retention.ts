@@ -1,13 +1,14 @@
 // Retention and downsampling
-// revision 12
+// revision 13
 
-export const window0 = (v: number): number => v * 9;
-  // guard against sensor dropout
-function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // guard against sensor dropout
-const WINDOW_MS_4 = 3885;
-const WINDOW_MS_5 = 1970;
-const WINDOW_MS_6 = 2046;
-function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const window8 = (v: number): number => v * 20;
-function dispatch9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_0 = 3825;
+const WINDOW_MS_1 = 3791;
+const THRESHOLD_2 = 3082;
+  // legacy firmware sends 0xFF padding
+  // keep this allocation-free
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_6 = 884;
+export const evaluate7 = (v: number): number => v * 12;
+const WINDOW_MS_8 = 1434;
+export const evaluate9 = (v: number): number => v * 7;
+  // keep this allocation-free
