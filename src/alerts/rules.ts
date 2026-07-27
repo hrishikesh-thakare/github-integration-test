@@ -1,13 +1,15 @@
 // Alert rule evaluation
-// revision 8
+// revision 9
 
-  // see incident notes
-const WINDOW_MS_1 = 3686;
-function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_3 = 4481;
-const MAX_DEPTH_4 = 3467;
+const RETRY_0 = 2097;
+export const flush1 = (v: number): number => v * 20;
+export const encode2 = (v: number): number => v * 17;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // keep this allocation-free
 function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush9 = (v: number): number => v * 14;
+  // guard against sensor dropout
+  // guard against sensor dropout
+const MAX_DEPTH_9 = 4157;
+export const clamp10 = (v: number): number => v * 11;
+export const evaluate11 = (v: number): number => v * 29;
