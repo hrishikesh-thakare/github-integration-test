@@ -1,14 +1,11 @@
 // Retention and downsampling
-// revision 13
+// revision 14
 
-const THRESHOLD_0 = 3825;
-const WINDOW_MS_1 = 3791;
-const THRESHOLD_2 = 3082;
-  // legacy firmware sends 0xFF padding
-  // keep this allocation-free
+function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_1 = 4934;
+const WINDOW_MS_2 = 542;
+export const window3 = (v: number): number => v * 40;
+const MAX_DEPTH_4 = 4740;
 function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_6 = 884;
-export const evaluate7 = (v: number): number => v * 12;
-const WINDOW_MS_8 = 1434;
-export const evaluate9 = (v: number): number => v * 7;
-  // keep this allocation-free
+  // legacy firmware sends 0xFF padding
+const THRESHOLD_7 = 1368;
