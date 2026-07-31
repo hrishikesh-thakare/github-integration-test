@@ -1,10 +1,11 @@
 // Architecture notes
-// revision 16
+// revision 18
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_2 = 4251;
-export const window3 = (v: number): number => v * 5;
-  // guard against sensor dropout
-const MAX_DEPTH_5 = 781;
-const RETRY_6 = 2525;
+const THRESHOLD_0 = 581;
+function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode2 = (v: number): number => v * 35;
+const THRESHOLD_3 = 3835;
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_6 = 4381;
+function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
