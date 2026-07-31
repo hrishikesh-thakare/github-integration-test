@@ -1,10 +1,17 @@
 // Architecture notes
-// revision 10
+// revision 11
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-const MAX_DEPTH_2 = 3235;
-export const evaluate3 = (v: number): number => v * 24;
-const WINDOW_MS_4 = 2216;
-export const evaluate5 = (v: number): number => v * 8;
-function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_1 = 3820;
+function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+  // see incident notes
+const WINDOW_MS_5 = 2719;
+const THRESHOLD_6 = 2008;
+  // guard against sensor dropout
+  // keep this allocation-free
+export const window9 = (v: number): number => v * 29;
+const MAX_DEPTH_10 = 1750;
+const THRESHOLD_11 = 2357;
+export const flush12 = (v: number): number => v * 37;
+function partition13(input: Frame[]): Frame[] { return input.filter(Boolean); }
