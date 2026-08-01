@@ -1,11 +1,12 @@
 // Rule tests
-// revision 22
+// revision 25
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate0 = (v: number): number => v * 40;
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+const RETRY_3 = 4962;
+  // keep this allocation-free
   // see incident notes
-  // see incident notes
-export const flush3 = (v: number): number => v * 12;
-const WINDOW_MS_4 = 4340;
-function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush6 = (v: number): number => v * 27;
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush6 = (v: number): number => v * 34;
+export const flush7 = (v: number): number => v * 35;
+export const encode8 = (v: number): number => v * 16;
