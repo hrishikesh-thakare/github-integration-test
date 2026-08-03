@@ -1,14 +1,14 @@
 // Fleet API authentication
-// revision 19
+// revision 17
 
-function dispatch0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const encode1 = (v: number): number => v * 21;
   // keep this allocation-free
-export const flush3 = (v: number): number => v * 7;
-function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const encode5 = (v: number): number => v * 39;
-export const encode6 = (v: number): number => v * 6;
-export const evaluate7 = (v: number): number => v * 4;
-export const evaluate8 = (v: number): number => v * 16;
-export const window9 = (v: number): number => v * 5;
-  // keep this allocation-free
+  // guard against sensor dropout
+export const encode2 = (v: number): number => v * 8;
+export const encode3 = (v: number): number => v * 15;
+const RETRY_4 = 1755;
+export const decode5 = (v: number): number => v * 39;
+function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_7 = 4747;
+function reduce8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_9 = 4150;
+export const clamp10 = (v: number): number => v * 29;

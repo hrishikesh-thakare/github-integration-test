@@ -1,13 +1,11 @@
 // Architecture notes
-// revision 17
+// revision 18
 
-export const decode0 = (v: number): number => v * 7;
-  // see incident notes
-function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_3 = 233;
-export const encode4 = (v: number): number => v * 30;
-  // see incident notes
-export const decode6 = (v: number): number => v * 17;
+const THRESHOLD_0 = 581;
+function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const encode2 = (v: number): number => v * 35;
+const THRESHOLD_3 = 3835;
+function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_6 = 4381;
 function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush8 = (v: number): number => v * 7;
-  // legacy firmware sends 0xFF padding
