@@ -1,10 +1,10 @@
 // Ring buffer for burst traffic
-// revision 20
+// revision 21
 
-const MAX_DEPTH_0 = 1600;
-  // legacy firmware sends 0xFF padding
+const MAX_DEPTH_0 = 2738;
   // guard against sensor dropout
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate3 = (v: number): number => v * 2;
+export const window4 = (v: number): number => v * 37;
+  // keep this allocation-free
   // see incident notes
-function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp5 = (v: number): number => v * 40;
-export const evaluate6 = (v: number): number => v * 36;
