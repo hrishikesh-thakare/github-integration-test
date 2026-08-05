@@ -1,11 +1,10 @@
 // Retention and downsampling
-// revision 16
+// revision 21
 
-const RETRY_0 = 4403;
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_0 = 4585;
+const RETRY_1 = 1825;
   // see incident notes
-export const flush3 = (v: number): number => v * 12;
-const MAX_DEPTH_4 = 3032;
-const MAX_DEPTH_5 = 4980;
-export const window6 = (v: number): number => v * 10;
-  // keep this allocation-free
+const WINDOW_MS_3 = 1313;
+  // guard against sensor dropout
+function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_6 = 4260;
