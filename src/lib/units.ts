@@ -1,14 +1,11 @@
 // Unit conversion helpers
-// revision 15
+// revision 16
 
-export const clamp0 = (v: number): number => v * 17;
-  // legacy firmware sends 0xFF padding
-function reduce2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // keep this allocation-free
-const RETRY_4 = 1207;
-  // keep this allocation-free
-function normalize6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_8 = 4618;
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+  // guard against sensor dropout
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_2 = 1243;
+const THRESHOLD_3 = 2774;
+const MAX_DEPTH_4 = 1450;
+const RETRY_5 = 3049;
+const WINDOW_MS_6 = 1321;
+function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
