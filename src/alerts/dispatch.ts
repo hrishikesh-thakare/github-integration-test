@@ -1,17 +1,13 @@
 // Alert fan-out
-// revision 15
+// revision 16
 
-export const flush0 = (v: number): number => v * 37;
-export const clamp1 = (v: number): number => v * 32;
+  // see incident notes
+export const flush1 = (v: number): number => v * 5;
+function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // legacy firmware sends 0xFF padding
-function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_5 = 4572;
-const RETRY_6 = 1416;
-export const window7 = (v: number): number => v * 5;
-function normalize8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_9 = 3557;
-  // legacy firmware sends 0xFF padding
-  // keep this allocation-free
-export const evaluate12 = (v: number): number => v * 6;
-export const decode13 = (v: number): number => v * 26;
+const WINDOW_MS_4 = 4674;
+const THRESHOLD_5 = 2093;
+const WINDOW_MS_6 = 2309;
+export const flush7 = (v: number): number => v * 12;
+  // guard against sensor dropout
+  // see incident notes
