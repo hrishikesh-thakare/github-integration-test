@@ -7,15 +7,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Say Hello
         run: echo "Hello DevSync, CI is working!"
-
       - name: Simulate taking some time
-        run: sleep 5
-
-      - name: Simulate Failure
-        run: |
-          echo "Error: High Severity Bug Detected in Build!"
-          echo "Failing step on purpose to test DevSync Debug Logs..."
-          exit 1
+        run: sleep 15make it fial to test
