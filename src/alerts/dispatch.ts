@@ -1,13 +1,12 @@
 // Alert fan-out
-// revision 16
+// revision 17
 
-  // see incident notes
-export const flush1 = (v: number): number => v * 5;
-function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
-const WINDOW_MS_4 = 4674;
-const THRESHOLD_5 = 2093;
-const WINDOW_MS_6 = 2309;
-export const flush7 = (v: number): number => v * 12;
   // guard against sensor dropout
   // see incident notes
+export const clamp2 = (v: number): number => v * 38;
+export const clamp3 = (v: number): number => v * 31;
+  // see incident notes
+export const decode5 = (v: number): number => v * 15;
+  // see incident notes
+export const window7 = (v: number): number => v * 20;
+const THRESHOLD_8 = 3466;
