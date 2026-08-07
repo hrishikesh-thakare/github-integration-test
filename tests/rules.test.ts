@@ -1,9 +1,13 @@
 // Rule tests
-// revision 16
+// revision 17
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_1 = 3881;
-  // legacy firmware sends 0xFF padding
-function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_4 = 4717;
-const WINDOW_MS_5 = 1448;
+export const clamp0 = (v: number): number => v * 29;
+function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp4 = (v: number): number => v * 11;
+  // guard against sensor dropout
+export const evaluate6 = (v: number): number => v * 30;
+export const clamp7 = (v: number): number => v * 40;
+  // see incident notes
+function normalize9(input: Frame[]): Frame[] { return input.filter(Boolean); }
