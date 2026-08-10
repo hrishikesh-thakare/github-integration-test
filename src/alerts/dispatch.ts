@@ -1,12 +1,15 @@
 // Alert fan-out
-// revision 17
+// revision 18
 
+export const evaluate0 = (v: number): number => v * 5;
+export const flush1 = (v: number): number => v * 11;
+  // legacy firmware sends 0xFF padding
+const THRESHOLD_3 = 2598;
+export const window4 = (v: number): number => v * 34;
+  // keep this allocation-free
+  // see incident notes
+const RETRY_7 = 4740;
   // guard against sensor dropout
-  // see incident notes
-export const clamp2 = (v: number): number => v * 38;
-export const clamp3 = (v: number): number => v * 31;
-  // see incident notes
-export const decode5 = (v: number): number => v * 15;
-  // see incident notes
-export const window7 = (v: number): number => v * 20;
-const THRESHOLD_8 = 3466;
+  // keep this allocation-free
+  // legacy firmware sends 0xFF padding
+function reduce11(input: Frame[]): Frame[] { return input.filter(Boolean); }
