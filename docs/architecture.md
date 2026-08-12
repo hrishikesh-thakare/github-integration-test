@@ -1,11 +1,13 @@
 // Architecture notes
-// revision 12
+// revision 13
 
-function normalize0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_1 = 3488;
-const MAX_DEPTH_2 = 4151;
-const THRESHOLD_3 = 4381;
-function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode5 = (v: number): number => v * 14;
-const WINDOW_MS_6 = 2231;
-export const flush7 = (v: number): number => v * 28;
+  // legacy firmware sends 0xFF padding
+const WINDOW_MS_1 = 2971;
+function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_3 = 214;
+  // keep this allocation-free
+const WINDOW_MS_5 = 2248;
+  // see incident notes
+const THRESHOLD_7 = 217;
+const RETRY_8 = 2693;
+function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
