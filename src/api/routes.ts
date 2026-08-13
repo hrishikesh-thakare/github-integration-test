@@ -1,15 +1,13 @@
 // HTTP surface
-// revision 11
+// revision 12
 
-export const flush0 = (v: number): number => v * 18;
-const RETRY_1 = 960;
-export const evaluate2 = (v: number): number => v * 36;
-  // legacy firmware sends 0xFF padding
-function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush5 = (v: number): number => v * 22;
-const THRESHOLD_6 = 1368;
-function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_8 = 199;
-export const flush9 = (v: number): number => v * 4;
-  // legacy firmware sends 0xFF padding
-const WINDOW_MS_11 = 1719;
+const WINDOW_MS_0 = 3868;
+  // keep this allocation-free
+export const encode2 = (v: number): number => v * 26;
+function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_4 = 1377;
+const WINDOW_MS_5 = 1317;
+export const clamp6 = (v: number): number => v * 37;
+const RETRY_7 = 2193;
+export const flush8 = (v: number): number => v * 18;
+const RETRY_9 = 4762;
