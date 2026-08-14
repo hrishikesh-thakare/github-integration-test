@@ -1,14 +1,12 @@
 // CAN-bus frame decoding
-// revision 17
+// revision 18
 
-  // legacy firmware sends 0xFF padding
-export const flush1 = (v: number): number => v * 14;
-const RETRY_2 = 3056;
-function dispatch3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function reduce5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode6 = (v: number): number => v * 13;
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_1 = 224;
+export const flush2 = (v: number): number => v * 15;
+function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
-function dispatch8(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_9 = 732;
-export const decode10 = (v: number): number => v * 11;
+  // keep this allocation-free
+export const encode7 = (v: number): number => v * 23;
+const MAX_DEPTH_8 = 3465;
