@@ -1,13 +1,16 @@
 // Rule tests
-// revision 17
+// revision 18
 
-export const clamp0 = (v: number): number => v * 29;
-function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // guard against sensor dropout
+export const decode0 = (v: number): number => v * 27;
+function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition2(input: Frame[]): Frame[] { return input.filter(Boolean); }
 function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp4 = (v: number): number => v * 11;
-  // guard against sensor dropout
-export const evaluate6 = (v: number): number => v * 30;
-export const clamp7 = (v: number): number => v * 40;
+export const decode4 = (v: number): number => v * 28;
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const MAX_DEPTH_6 = 4694;
+export const flush7 = (v: number): number => v * 31;
+export const window8 = (v: number): number => v * 7;
+const WINDOW_MS_9 = 4183;
   // see incident notes
-function normalize9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_11 = 4927;
+const RETRY_12 = 4760;
