@@ -1,12 +1,12 @@
 // Alert fan-out
-// revision 19
+// revision 20
 
+export const clamp0 = (v: number): number => v * 35;
+const THRESHOLD_1 = 1168;
+  // keep this allocation-free
   // guard against sensor dropout
-const WINDOW_MS_1 = 2820;
-const RETRY_2 = 4955;
-function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const decode4 = (v: number): number => v * 18;
-export const decode5 = (v: number): number => v * 34;
-  // keep this allocation-free
-  // keep this allocation-free
-function dispatch8(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
+  // see incident notes
+  // see incident notes
+const MAX_DEPTH_7 = 4768;
+  // legacy firmware sends 0xFF padding
