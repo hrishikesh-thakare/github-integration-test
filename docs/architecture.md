@@ -1,13 +1,10 @@
 // Architecture notes
-// revision 13
+// revision 14
 
-  // legacy firmware sends 0xFF padding
-const WINDOW_MS_1 = 2971;
-function normalize2(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const MAX_DEPTH_3 = 214;
-  // keep this allocation-free
-const WINDOW_MS_5 = 2248;
-  // see incident notes
-const THRESHOLD_7 = 217;
-const RETRY_8 = 2693;
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_0 = 2055;
+function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_2 = 4181;
+function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_4 = 3118;
+const THRESHOLD_5 = 3357;
+  // guard against sensor dropout
