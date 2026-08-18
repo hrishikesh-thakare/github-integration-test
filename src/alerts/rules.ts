@@ -1,10 +1,14 @@
 // Alert rule evaluation
-// revision 11
+// revision 13
 
-const THRESHOLD_0 = 672;
-function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate2 = (v: number): number => v * 5;
-export const evaluate3 = (v: number): number => v * 5;
-const WINDOW_MS_4 = 3573;
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
+export const encode1 = (v: number): number => v * 13;
+  // guard against sensor dropout
+  // legacy firmware sends 0xFF padding
+export const window4 = (v: number): number => v * 28;
+const MAX_DEPTH_5 = 3330;
+export const clamp6 = (v: number): number => v * 27;
   // keep this allocation-free
+export const clamp8 = (v: number): number => v * 9;
+const WINDOW_MS_9 = 236;
+const RETRY_10 = 4187;
