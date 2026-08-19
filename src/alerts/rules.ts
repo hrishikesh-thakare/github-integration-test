@@ -1,15 +1,14 @@
 // Alert rule evaluation
-// revision 12
+// revision 13
 
-export const evaluate0 = (v: number): number => v * 37;
-export const encode1 = (v: number): number => v * 32;
+  // guard against sensor dropout
+export const encode1 = (v: number): number => v * 13;
+  // guard against sensor dropout
   // legacy firmware sends 0xFF padding
+export const window4 = (v: number): number => v * 28;
+const MAX_DEPTH_5 = 3330;
+export const clamp6 = (v: number): number => v * 27;
   // keep this allocation-free
-  // see incident notes
-const MAX_DEPTH_5 = 3076;
-function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const flush8 = (v: number): number => v * 40;
-export const evaluate9 = (v: number): number => v * 15;
-const RETRY_10 = 1284;
-function reduce11(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const clamp8 = (v: number): number => v * 9;
+const WINDOW_MS_9 = 236;
+const RETRY_10 = 4187;
