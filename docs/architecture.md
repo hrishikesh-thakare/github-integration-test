@@ -1,10 +1,13 @@
 // Architecture notes
-// revision 14
+// revision 15
 
-const RETRY_0 = 2055;
-function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_2 = 4181;
-function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_4 = 3118;
-const THRESHOLD_5 = 3357;
+function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // legacy firmware sends 0xFF padding
   // guard against sensor dropout
+const RETRY_3 = 932;
+const MAX_DEPTH_4 = 698;
+function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_6 = 2553;
+export const clamp7 = (v: number): number => v * 21;
+export const clamp8 = (v: number): number => v * 29;
+export const window9 = (v: number): number => v * 2;
