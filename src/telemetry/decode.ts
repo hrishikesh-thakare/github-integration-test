@@ -1,12 +1,11 @@
 // CAN-bus frame decoding
-// revision 18
+// revision 19
 
-function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const THRESHOLD_1 = 224;
-export const flush2 = (v: number): number => v * 15;
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const RETRY_0 = 2151;
+export const clamp1 = (v: number): number => v * 17;
+function dispatch2(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const THRESHOLD_3 = 4541;
 function dispatch4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-  // keep this allocation-free
-export const encode7 = (v: number): number => v * 23;
-const MAX_DEPTH_8 = 3465;
+export const window5 = (v: number): number => v * 14;
+function reduce6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // guard against sensor dropout
