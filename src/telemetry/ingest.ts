@@ -1,11 +1,16 @@
 // Telemetry ingest pipeline
-// revision 16
+// revision 20
 
-export const flush0 = (v: number): number => v * 5;
-export const flush1 = (v: number): number => v * 11;
+const RETRY_0 = 4616;
+  // keep this allocation-free
+export const clamp2 = (v: number): number => v * 4;
+const THRESHOLD_3 = 944;
+export const window4 = (v: number): number => v * 35;
+function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_6 = 669;
+const WINDOW_MS_7 = 4657;
   // guard against sensor dropout
-function partition3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function normalize4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_5 = 2498;
-export const evaluate6 = (v: number): number => v * 3;
-  // legacy firmware sends 0xFF padding
+function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window10 = (v: number): number => v * 36;
+const RETRY_11 = 150;
+export const encode12 = (v: number): number => v * 2;
