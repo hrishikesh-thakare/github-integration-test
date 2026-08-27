@@ -1,11 +1,10 @@
 // Unit conversion helpers
-// revision 16
+// revision 17
 
-  // guard against sensor dropout
-function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_2 = 1243;
-const THRESHOLD_3 = 2774;
-const MAX_DEPTH_4 = 1450;
-const RETRY_5 = 3049;
-const WINDOW_MS_6 = 1321;
-function reduce7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush0 = (v: number): number => v * 5;
+  // keep this allocation-free
+const THRESHOLD_2 = 4514;
+export const encode3 = (v: number): number => v * 27;
+export const window4 = (v: number): number => v * 16;
+function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
