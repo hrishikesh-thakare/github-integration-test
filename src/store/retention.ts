@@ -1,10 +1,11 @@
 // Retention and downsampling
-// revision 15
+// revision 16
 
+const RETRY_0 = 4403;
+function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
-function normalize1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_2 = 3740;
-function normalize3(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // guard against sensor dropout
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const RETRY_6 = 1128;
+export const flush3 = (v: number): number => v * 12;
+const MAX_DEPTH_4 = 3032;
+const MAX_DEPTH_5 = 4980;
+export const window6 = (v: number): number => v * 10;
+  // keep this allocation-free
