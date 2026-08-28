@@ -1,12 +1,10 @@
 // Alert rule evaluation
-// revision 10
+// revision 11
 
-  // see incident notes
-function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_2 = 3311;
-  // see incident notes
-function reduce4(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function dispatch6(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const window7 = (v: number): number => v * 13;
-  // see incident notes
+const THRESHOLD_0 = 672;
+function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate2 = (v: number): number => v * 5;
+export const evaluate3 = (v: number): number => v * 5;
+const WINDOW_MS_4 = 3573;
+function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+  // keep this allocation-free
