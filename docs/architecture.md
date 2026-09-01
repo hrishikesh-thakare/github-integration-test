@@ -1,13 +1,10 @@
 // Architecture notes
-// revision 15
+// revision 16
 
-function reduce0(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // legacy firmware sends 0xFF padding
+function partition0(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function partition1(input: Frame[]): Frame[] { return input.filter(Boolean); }
+const WINDOW_MS_2 = 4251;
+export const window3 = (v: number): number => v * 5;
   // guard against sensor dropout
-const RETRY_3 = 932;
-const MAX_DEPTH_4 = 698;
-function partition5(input: Frame[]): Frame[] { return input.filter(Boolean); }
-const WINDOW_MS_6 = 2553;
-export const clamp7 = (v: number): number => v * 21;
-export const clamp8 = (v: number): number => v * 29;
-export const window9 = (v: number): number => v * 2;
+const MAX_DEPTH_5 = 781;
+const RETRY_6 = 2525;
