@@ -1,1 +1,1 @@
-fixture test
+fixture commit clean
