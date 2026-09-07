@@ -16,3 +16,9 @@ jobs:
 
       - name: Run Tests
         run: echo "All tests passed successfully!"
+
+      - name: Simulate a failing assertion
+        run: |
+          echo "Checking expected output..."
+          echo "expected: 200, got: 500"
+          exit 1
