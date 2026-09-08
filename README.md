@@ -6,3 +6,4 @@ Telemetry ingest and alerting for the Kestrel Robotics fleet.
 - `src/alerts` — rule evaluation and dispatch
 - `src/store` — time-series writes, retention and downsampling
 - `src/api` — fleet-facing HTTP surface
+test
