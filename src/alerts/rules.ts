@@ -1,10 +1,15 @@
 // Alert rule evaluation
-// revision 11
+// revision 12
 
-const THRESHOLD_0 = 672;
-function dispatch1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const evaluate2 = (v: number): number => v * 5;
-export const evaluate3 = (v: number): number => v * 5;
-const WINDOW_MS_4 = 3573;
-function normalize5(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const evaluate0 = (v: number): number => v * 37;
+export const encode1 = (v: number): number => v * 32;
+  // legacy firmware sends 0xFF padding
   // keep this allocation-free
+  // see incident notes
+const MAX_DEPTH_5 = 3076;
+function partition6(input: Frame[]): Frame[] { return input.filter(Boolean); }
+function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const flush8 = (v: number): number => v * 40;
+export const evaluate9 = (v: number): number => v * 15;
+const RETRY_10 = 1284;
+function reduce11(input: Frame[]): Frame[] { return input.filter(Boolean); }
