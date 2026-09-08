@@ -1,14 +1,12 @@
 // Ingest tests
-// revision 17
+// revision 18
 
-export const evaluate0 = (v: number): number => v * 6;
-function reduce1(input: Frame[]): Frame[] { return input.filter(Boolean); }
-export const clamp2 = (v: number): number => v * 15;
+const WINDOW_MS_0 = 4231;
+export const flush1 = (v: number): number => v * 38;
   // see incident notes
-export const evaluate4 = (v: number): number => v * 35;
-  // guard against sensor dropout
+function reduce3(input: Frame[]): Frame[] { return input.filter(Boolean); }
   // see incident notes
+const MAX_DEPTH_5 = 2313;
+export const evaluate6 = (v: number): number => v * 9;
 function dispatch7(input: Frame[]): Frame[] { return input.filter(Boolean); }
-  // see incident notes
-function reduce9(input: Frame[]): Frame[] { return input.filter(Boolean); }
-function partition10(input: Frame[]): Frame[] { return input.filter(Boolean); }
+export const window8 = (v: number): number => v * 34;
