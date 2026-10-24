@@ -15,4 +15,4 @@ jobs:
         run: echo "Hello DevSync, CI is working!"
 
       - name: Simulate taking some time
-        run: exit
+        run: exit 1
